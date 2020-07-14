@@ -1,0 +1,28 @@
+{
+  "name": "contentstack-auto-redirect",
+  "version": "1.0.0",
+  "description": "Contentstack auto redirect",
+  "main": "index.js",
+  "author": "Contentstack",
+  "license": "ISC",
+  "dependencies": {
+    "request": "2.88.0",
+    "request-promise": "4.2.4"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint index.js *.js --fix",
+    "build": "rm -rf node_modules index.zip && npm install --production && zip -r index.zip *"
+  },
+  "devDependencies": {
+    "dotenv": "8.1.0",
+    "eslint": "7.4.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "serverless-add-api-key": "4.0.2",
+    "serverless-plugin-scripts": "1.0.2"
+  }
+}
