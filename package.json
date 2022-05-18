@@ -7,11 +7,14 @@
   "license": "ISC",
   "dependencies": {
     "request": "2.88.0",
-    "request-promise": "4.2.4"
+    "request-promise": "4.2.4",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint index.js *.js --fix",
-    "build": "rm -rf node_modules index.zip && npm install --production && zip -r index.zip *"
+    "build": "rm -rf node_modules index.zip && npm install --production && zip -r index.zip *",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "dotenv": "8.1.0",
@@ -24,5 +27,6 @@
     "eslint-plugin-standard": "4.0.1",
     "serverless-add-api-key": "4.0.2",
     "serverless-plugin-scripts": "1.0.2"
-  }
+  },
+  "snyk": true
 }
