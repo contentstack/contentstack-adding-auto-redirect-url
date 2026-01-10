@@ -6,8 +6,8 @@
   "author": "Contentstack",
   "license": "ISC",
   "dependencies": {
-    "request": "2.88.0",
-    "request-promise": "4.2.4"
+    "request": "2.88.2",
+    "request-promise": "4.2.6"
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint index.js *.js --fix",
